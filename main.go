@@ -1,13 +1,13 @@
 package main
 
 import (
-	"cloneprojects/postmates/database/models"
 	"log"
 	"os"
 
-	"github.com/acentior/train-ticket/database/postgres"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
+	"github.com/acentior/train-ticket/database/postgres"
+	"github.com/acentior/train-ticket/handler"
 )
 
 func main(){

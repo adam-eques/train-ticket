@@ -1,9 +1,7 @@
-package models
-
-import "github.com/google/uuid"
+packages models 
 
 type Station struct {
-	ID          uuid.UUID `json:"id"`
-	StationName string    `json:"station_name"`
-	LocationId  Location  `json:"location_id"`
+	ID uuid.UUID `json:"id"`
+	StationName string `json:"station_name"`
+	LocationId  Location `json:"location_id"`
 }
