@@ -1,11 +1,12 @@
 package handler
 
 import (
-	"github.com/acentior/train-ticket/repository"
 	"gorm.io/gorm"
+	"github.com/midepeter/train-ticket/repository"
 )
 
 type Handler struct {
-	db   *gorm.DB
+	db *gorm.DB
 	Repo *repository.Repository
 }
+
