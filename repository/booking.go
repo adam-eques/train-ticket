@@ -3,7 +3,7 @@ package repository
 import (
 	"fmt"
 
-	"github.com/midepeter/train-ticket/database/models"
+	"github.com/acentior/train-ticket/database/models"
 )
 
 func (r *Repository) GetBooking(id uint, t *models.Ticket) (err error) {

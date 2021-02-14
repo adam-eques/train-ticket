@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/acentior/train-ticket/database/models"
+	"github.com/acentior/train-ticket/utils/utils"
 	"github.com/gin-gonic/gin"
-	"github.com/midepeter/train-ticket/database/models"
-	"github.com/midepeter/train-ticket/utils/utils"
 )
 
 func (h *Handler) GetAllTickets(c *gin.Context) {

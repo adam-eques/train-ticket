@@ -1,11 +1,12 @@
 package server
 
 import (
+	"github.com/acentior/train-ticket/handler"
 	"github.com/gin-gonic/gin"
-	"github.com/midepeter/train-ticket/handler"
+	"gorm.io/gorm"
 )
 
-func StartServer() *gin.Engine {
+func StartServer(db *gorm.DB) *gin.Engine {
 	h := handler.NewHandler(db)
 
 	r := gin.Default()

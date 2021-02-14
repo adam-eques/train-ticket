@@ -1,4 +1,4 @@
-module github.com/midepeter/train-ticket
+module github.com/acentior/train-ticket
 
 go 1.15
 

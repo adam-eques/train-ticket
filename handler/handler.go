@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/midepeter/train-ticket/repository"
+	"github.com/acentior/train-ticket/repository"
 	"gorm.io/gorm"
 )
 
@@ -11,5 +11,6 @@ type Handler struct {
 }
 
 func NewHandler(db *gorm.DB) *Handler {
-	return &Handler{db: db}
+	repo := repository.Repo(db)
+	return &Handler{db: db, Repo: repo}
 }
